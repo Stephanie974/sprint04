@@ -49,12 +49,58 @@ console.log(str.slice(7));
 // console.log(string.slice(start, end));
 // let substr = str.slice(startIndex [endIndex ]);
 
-let p = prompt("Entrer un nombre");
-function testPair() {
-  if (p % 2 == 0) {
-    alert(p + "est un nombre pair");
-  } else {
-    alert(p + "est un nombre impair");
+// let p = prompt("Entrer un nombre");
+// function testPair() {
+//   if (p % 2 == 0) {
+//     alert(p + " est un nombre pair");
+//   } else {
+//     alert(p + " est un nombre impair");
+//   }
+// }
+// console.log(testPair());
+
+// let p = prompt("Entrer un nombre");
+// function testPair() {
+//   if (p % 2 == 80 - 100) {
+//     alert(p + "A");
+//   } else {
+//     alert(p + "B");
+//   }
+// }
+// console.log(testPair());
+
+// let note = prompt("Entrez votre note:");
+// function notation() {
+//   if (note >= 80 && note <= 100) {
+//     alert("A");
+//   }
+//   if (note >= 70 && note <= 89) {
+//     alert("B");
+//   }
+//   if (note >= 60 && note <= 69) {
+//     alert("C");
+//   }
+//   if (note >= 50 && note <= 59) {
+//     alert("D");
+//   }
+//   if (note >= 0 && note <= 49) {
+//     alert("F");
+//   }
+// }
+
+let mois = prompt("mois");
+saison(mois);
+function saison(mois) {
+  if (mois == "janvier" || mois == "février" || mois == "mars") {
+    alert(mois + " Fais parti de l'hivers");
+  }
+  if (mois == "avril" || mois == "mai" || mois == "juin") {
+    alert(mois + " Fais parti de l'été");
+  }
+  if (mois == "juillet" || mois == "aout" || mois == "septembre") {
+    alert(mois + " Fais parti de pringtemps");
+  }
+  if (mois == "octobre" || mois == "novembre" || mois == "décembre") {
+    alert(mois + " Fais parti de l'automne");
   }
 }
-console.log(testPair());
