@@ -1,50 +1,48 @@
-console.log(
-  "There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another."
-);
-console.log(
-  "\"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.\""
-);
-let number = 10;
-console.log(typeof 10);
-console.log("10" === 10);
-let a = parseInt("10");
-console.log(a === 10);
-let juste = 9.8;
-console.log(juste);
+// let myAge = 250;
+// console.log(myAge);
+// let yourAge = 25;
+// console.log(yourAge);
+// console.log("J'ai " + (myAge - yourAge) + " de plus que toi.");
 
-console.log(parseFloat("9.8") == 10);
+// let d = new Date();
+// let year = d.getFullYear();
+// console.log(year);
+// let person = year - prompt("Entrez votre date de naissance");
+// console.log(person);
 
-let hardwork = "python";
-let hardwork0 = "jargon";
-console.log(hardwork.includes("on"));
-console.log(hardwork0.includes("on"));
+// if (person > 18) {
+//   alert("vous avez " + person + " ans. Vous etes autorisé à conduire.");
+// } else {
+//   alert(
+//     "Vous avez " +
+//       person +
+//       " ans. Vous n'etes pas autorisé de conduire, il faut patienter, encore quelques années!"
+//   );
+// }
+// console.log(alert);
 
-let hardwork1 = "I hope this course is not full of jargon.";
-console.log(hardwork1.includes("jargon"));
+// Entrez le nombre de vôtres que vous habitez: 100
+// // Vous avez vécu 3153600000 secs.
+// let seconde = 3156000;
+// let agededuit = prompt("Entrez votre age") * 31536000;
+// console.log(agededuit);
 
-var randomnumber = Math.floor(Math.random() * 100);
-console.log(randomnumber);
+// Créez un format d'heure lisible par l'homme à l'aide de l'objet Date time
 
-var randomnumberX = Math.floor(Math.random() * 100 + 50);
-console.log(randomnumberX);
+//     YYYY-MM-DD HH:mm
+//     DD-MM-YYYY HH:mm
+//     DD/MM/YYYY HH:mm
 
-let randomnumber2 = Math.floor(Math.random() * (101 - 50)) + 50;
-console.log(randomnumber2);
+// let date1 = new Date("February 13, 1991 06:44:00");
+// console.log(date1);
 
-var randomnumber1 = Math.floor(Math.random() * 255);
-console.log(randomnumber1);
-// str.slice(startIndex [ endIndex ]);
-let str =
-  "You cannot end a sentence with because because because is a conjunction";
+// let date2 = new Date("1991-02-13T06:44:00");
+// console.log(date2);
+const date = new Date();
+const [month, day, year] = [
+  date.getMonth(),
+  date.getDate(),
+  date.getFullYear(),
+];
 
-console.log(str.indexOf("because"));
-console.log(str.lastIndexOf("e"));
-
-// console.log(str.search("because"));
-// console.log(str.charAt("because "));
-
-// console.log(str.substr(31, 24));
-console.log(str.slice(7));
-// console.log(str.slice("because"));
-// console.log(string.slice(start, end));
-// let substr = str.slice(startIndex [endIndex ]);
+console.log(date);
