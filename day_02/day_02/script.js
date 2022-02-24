@@ -72,25 +72,9 @@ console.log(
 
 // Vérifiez si une certaine entreprise existe dans le tableau itCompanies.
 // S'il existe, retournez le nom de l'entreprise sinon retournez "une société introuvable".
-// let itCompanies2 = [
-//   "Facebook",
-//   "Google",
-//   "Microsoft",
-//   "Apple",
-//   "IBM",
-//   "Oracle",
-//   "Amazon",
-// ];
 
-console.log(itCompanies2[0]);
-console.log(itCompanies2[3]);
-console.log(itCompanies2[6]);
-console.log(itCompanies2[1]);
-console.log(itCompanies2[2]);
-console.log(itCompanies2[4]);
-console.log(itCompanies2[5]);
-
-let itCompanies2 = [
+let itCompanies2 = prompt("Companies:");
+let companie1 = [
   "Facebook",
   "Google",
   "Microsoft",
@@ -100,13 +84,52 @@ let itCompanies2 = [
   "Amazon",
 ];
 
-let found = itCompanies2.find((element) => element > 10);
+console.log(companie1);
+console.log(companie1[0]);
+console.log(companie1[3]);
+console.log(companie1[6]);
+console.log(companie1[1]);
+console.log(companie1[2]);
+console.log(companie1[4]);
+console.log(companie1[5]);
+console.log(typeof companie1);
+itCompanie(companie1);
 
-let unecertainecompanie = "antenne reunion";
-let person = 0;
-console.log(unecertainecompanie);
-if (unecertainecompanie == itCompanies2[0]) {
-  console.log("c'est =");
-} else {
-  console.log("c'est pas =");
+function itCompanie(companies) {
+  let unecertainecompanie = "Cette companie";
+  console.log(unecertainecompanie);
+  let startup = 0;
+
+  companie1.sort();
+  for (let i = 0; i < companie1.length; i++) {
+    console.log(i);
+    console.log(companie1[i]);
+  }
+
+  //   if (
+  //     companies == "Facebook" ||
+  //     companies == "Google" ||
+  //     companies == "Microsoft" ||
+  //     companies == "Apple" ||
+  //     companies == "IBM" ||
+  //     companies == "Oracle" ||
+  //     companies == "Amazon"
+  //   ) {
+  console.log(companie1.includes("o"));
+
+  //     alert(companie1 + " existe");
+  //     console.log("c'est =");
+  //   } else {
+  //     alert(unecertainecompanie + " n'existe pas");
+  //     console.log("c'est pas =");
+  //   }
 }
+
+// (Facultatif) Filtrez les entreprises qui ont plus d'un 'o' sans utiliser la méthode filter
+// Trier le tableau en utilisant la méthode sort()
+
+// let n = "reveil";
+// fot (let i = 0 ; i <= 10 ; i++)
+// {
+
+// }
